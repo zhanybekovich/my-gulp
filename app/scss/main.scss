@@ -122,3 +122,93 @@ h6 {
     text-transform: uppercase;
   }
 }
+
+/* Our Project*/
+
+.project {
+  margin-bottom: 150px;
+}
+.section {
+  &-title {
+    font-style: 400;
+    font-size: 30px;
+    line-height: 44px;
+    color: $dark;
+    position: relative;
+    padding-left: 140px;
+    margin: 0;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    padding-right: 115px;
+  }
+
+  &-title::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    border-top: 3px solid $accent-color;
+    left: 0;
+    top: 13px;
+  }
+
+  &-title::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    border-top: 3px solid $accent-color;
+    left: 50px;
+    top: 28px;
+  }
+}
+.slider {
+  img {
+    width: 100%;
+  }
+  &-item-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    position: relative;
+  }
+  &-item-column {
+    position: relative;
+  }
+  &-caption {
+    position: absolute;
+    background-color: $light;
+    padding: 20px 25px;
+    width: 250px;
+    bottom: 35px;
+    right: 35px;
+
+    h3 {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 19px;
+    }
+  }
+}
+
+//slider
+
+.slider {
+  &-btn {
+    position: absolute;
+    top: -120px;
+    right: 0;
+    width: 55px;
+    height: 55px;
+    border: 2px solid $accent-color;
+    background-color: transparent;
+  }
+  &-prev {
+    right: 55px;
+    transform: rotate(180deg);
+    border-left: transparent;
+  }
+}
