@@ -212,3 +212,63 @@ h6 {
     border-left: transparent;
   }
 }
+
+.catalog {
+  margin-bottom: 150px;
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 211px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 55px;
+    cursor: pointer;
+  }
+
+  h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: $dark;
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  &__items-robe1,
+  &__items-robe2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    position: relative;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__item-column {
+    position: absolute;
+    background-color: $accent-color;
+    padding-left: 20px;
+    width: 265px;
+    height: 86px;
+    bottom: 15px;
+    right: 0;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: $light;
+  }
+
+  &__active {
+    display: none;
+  }
+}
